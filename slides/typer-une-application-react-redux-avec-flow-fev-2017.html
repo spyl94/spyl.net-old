@@ -201,12 +201,12 @@ function foo(x, y) {
 <div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 928px; height: 237px; left: 16px; top: 221px;" data-block-id="aac6ce9166cfef1d4845909a24249953"><div class="sl-block-content" style="z-index: 12; border-width: 1px; border-style: solid;"><pre class="javascript"><code>// index.js
 // @flow
 
-(function() { 
+(function() {
     function foo(x: string, y: number): string {
         return x.length * y;
     }
     foo('Hello', 42);
-}); 
+});
 </code></pre></div></div>
 <div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 936px; height: 33px; left: 16px; top: 518px;" data-block-id="6f73db8b9f3383f7c34860395daf8d0d"><div class="sl-block-content" style="z-index: 13;"><pre class="bash"><code>$ flow # Démarre un serveur flow si besoin, puis affiche les erreurs:</code></pre></div></div>
 <div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 936px; height: 108px; left: 16px; top: 551px;" data-block-id="ccc7eddf8994ba7c9612668a0a995f0d"><div class="sl-block-content" style="z-index: 14;"><pre class="javascript"><code>index.js:6
@@ -360,7 +360,7 @@ var optObj: { a: string; b?: number } = { a: "hello" };
 
 
 // Burger syntax
-type User = { name: string, age: number }; // allow extra properties 
+type User = { name: string, age: number }; // allow extra properties
 type StrictUser = {| name: string, age: number |}; // disallow extra properties
 </code></pre></div></div>
 
@@ -534,8 +534,8 @@ import type { Dispatch, Action } from '../types'; // Cf prochain slide
 
 // ...
 export const deleteVote = (dispatch: Dispatch): void =&gt; {
-   fetch('...').then(() =&gt; { 
-        dispatch({ type: 'DELETE_VOTE'}); 
+   fetch('...').then(() =&gt; {
+        dispatch({ type: 'DELETE_VOTE'});
    });
 };
 
@@ -625,16 +625,16 @@ export type State = {
 import React from 'react';
 import { connect, type Connector } from 'react-redux';
 import type { State, Dispatch } from '../types';
- 
+
 type Props = {|  // Use exact object type for Props
-    count: number, 
-    increment: () =&gt; void 
+    count: number,
+    increment: () =&gt; void
 |};
 
 const Content = ({ count, increment }: Props) =&gt; (/* ... */);
 
 const mapDispatchToProps = (dispatch: Dispatch) =&gt; ({
-  increment: () =&gt; { dispatch({ type: 'INCREMENT'}) }, // Ou un action creator 
+  increment: () =&gt; { dispatch({ type: 'INCREMENT'}) }, // Ou un action creator
 });
 const mapStateToProps = (state: State) =&gt; ({ count: state.counter });
 
@@ -769,7 +769,7 @@ t.annotate(greet, t.function(t.param('person', Person), t.return(t.string())));<
 <p><span>Aurélien David - </span><a href="https://twitter.com/spyl94" target="_blank">@spyl94</a><span> - </span><a href="https://spyl.net/" target="_blank">spyl.net</a></p>
 </div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 816px; left: 92px; top: 509px;" data-block-id="6429e879c2e711735965d44f66e760a6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;">
-<p> Slides: <a href="https://spyl.net/slides/typer-une-application-react-redux-avec-flow-fev-2017" target="_blank">bit.ly/reactwithflow</a></p>
+<p> Slides: <a href="https://spyl.net/slides/typer-une-application-react-redux-avec-flow-fev-2017.html" target="_blank">bit.ly/reactplusflow</a></p>
 </div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 840px; left: 80px; top: 451px;" data-block-id="e864b1a07cccfe8424f8d7287a6bb273"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;">
 <p>Démo de React + Redux + Flow: <a href="https://github.com/spyl94/react-brunch-demo" target="_blank">spyl94/react-brunch-demo</a></p>
@@ -778,7 +778,7 @@ t.annotate(greet, t.function(t.param('person', Person), t.return(t.string())));<
 		</div>
 
 
-		
+
 <script>
 	var SLConfig = {"current_user":{"id":2832,"username":"spyl","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/eb178695c1cf50dde732c34ebf1c19e0?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":147557,"present_controls":true,"present_upsizing":true,"present_notes":true,"editor_grid":true,"editor_snap":true,"developer_mode":false,"speaker_layout":null},"email":"spyl94@gmail.com","notify_on_receipt":true,"billing_address":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1},"deck":{"id":905633,"slug":"typer-une-application-react-redux-avec-flow-fev-2017","title":"Typer une application React/Redux avec Flow","description":"Typer une application React/Redux avec Flow","width":960,"height":700,"visibility":"all","published_at":"2017-02-03T16:52:24.862Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/a34b903e8cd0e08d3278565a2ef48005/thumb.jpg","view_count":18,"user":{"id":2832,"username":"spyl","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/eb178695c1cf50dde732c34ebf1c19e0?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":147557,"present_controls":true,"present_upsizing":true,"present_notes":true}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"should_loop":false,"share_notes":false,"slide_number":false,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1487598999323,"font_typekit":null,"font_google":null,"access_token":"wcLxbHi5sUyyfXxMcLkqdhjmhYAr","notes":{}}};
 </script>
@@ -865,7 +865,7 @@ return this.getCurrentThread().getID()===SL.components.collab.Comments.DECK_THRE
 
 		</script>
 
-		
+
 
 	</body>
 </html>
